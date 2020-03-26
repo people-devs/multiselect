@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <script
+    src="https://code.jquery.com/jquery-2.2.4.min.js"
+    integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44="
+    crossorigin="anonymous"></script>
+
+  <!--[if lte IE 8]><script charset="utf-8" type="text/javascript" src="//js.hsforms.net/forms/v2-legacy.js"></script><![endif]--><script charset="utf-8" type="text/javascript" src="https://js.hsforms.net/forms/v2.js"></script>
+  
+    <link href="styles/multiselect.css" rel="stylesheet"/>
+  <!--   <script src="multiselect.min.js"></script>
+   -->  <script src="scripts/helper.js"></script>
+    <script src="scripts/multiselect.core.js"></script>
+    <script src="scripts/multiselect.js"></script>
+
+  <script> 
+  var modal_title = "Usage Terms"
+  var modal_body = "Yes, I agree to receive from The People - People and Computers, by email, SMS, fax and phone, information and updates in the fields of technology, hi-tech, management, personal and business development, invitations to participate in events and conferences of different kinds, promotional information on business opportunities, regular updates and other services, by People and Computers and other companies in the field. I know that, according to amendment 40 to the 2008 Information Law, my agreement is necessary in order to receive promotional information from commercial firms, and unless I give my written consent to receive such information from you, I won't be able to get updates on those issues and won't be able to receive invitations to additional events, confirmation of arrival to conferences, changes to events' time , assorted reminders towards the event and important general information. It is known to me that People and Computers send messages to databases 208778 and 212068 as required by law, and I can remove my name from the mailing lists at any time."
+  jQuery(document).ready(function(){
+    hbspt.forms.create({ 
+    portalId: "6440451", 
+    formId: "5c38cb66-6be3-4dec-bbc8-7b4466c753e3",  
+    onFormReady: function($form, ctx){
+        var s = jQuery('[id^="type_of_company"]');
+        s.attr("multiple", "multiple");
+        s.find("option:disabled").remove();
+        document.multiselect('#type_of_company-5c38cb66-6be3-4dec-bbc8-7b4466c753e3',{placeholder: '123rewsd'});
+        }
+    })
+ });
+  </script>
+</head>
+<body>
+  
+</body>
+</html>
